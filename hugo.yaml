@@ -1,0 +1,43 @@
+baseURL: "https://dineshauti.in/"
+title: "Dinesh Auti"
+theme: "PaperMod"
+languageCode: "en-us"
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+params:
+  author: "Dinesh Auti"
+  homeInfoParams:
+    Title: "[~]$ whoami"
+    Content: "**Site Reliability Engineer** with 6+ years of experience in building scalable cloud infrastructure, driving CI/CD automation, and
+enhancing system observability. Skilled in building scalable, secure, and efficient environments using IaC and modern DevOps
+practices. Proven ability to support infrastructure reliability initiatives, influence architecture decisions, and improve developer
+workflows in compliance-driven environments such as HITRUST."
+
+  socialIcons:
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/dineshauti/"
+    - name: "GitHub"
+      url: "https://github.com/dineshnauti/"
+
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadcrumbs: true
+  enableEmoji: true
+
+menu:
+  main:
+#    - identifier: about
+#      name: About
+#      url: /about/
+#      weight: 1
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 2
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 3
