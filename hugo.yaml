@@ -19,6 +19,7 @@ params:
   author: "Dinesh Auti"
   description: "Thoughts on infrastructure, SRE, automation, and DevOps"
   keywords: [SRE, DevOps, Kubernetes, Observability, Hugo, Infrastructure]
+  mainSections: [posts]
   homeInfoParams:
     Title: "Hi, I’m Dinesh 👋🏼"
     Content: "A Site Reliability Engineer by day, curious tinkerer by always.
