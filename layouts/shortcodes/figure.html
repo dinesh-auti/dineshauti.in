@@ -1,8 +1,9 @@
+{{ $resizeParam := "700x webp" }}
 {{ $img := .Page.Resources.GetMatch (.Get "src") }}
 {{ if not $img }}
     <p style="color:red;">❌ Image not found: {{ .Get "src" }}</p>
 {{ else if and (not (eq $img.MediaType.SubType "svg")) }}
-    {{ $resized := $img.Resize "700x webp" }}
+    {{ $resized := $img.Resize $resizeParam }}
     <figure>
         <img src="{{ $resized.RelPermalink | safeURL }}" alt="{{ .Get "alt" | safeHTMLAttr }}" loading="lazy" decoding="async" />
         {{ if .Get "caption" }}
