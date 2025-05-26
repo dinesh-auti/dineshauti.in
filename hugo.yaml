@@ -40,10 +40,10 @@ params:
   ShowToc: true
   assets:
     disableHLJS: true
-    favicon: "/assets/favicon.ico"
-    favicon96x96: "/assets/favicon-96x96.png"
-    apple_touch_icon: "/assets/favicon-180x180.png"
-    safari_pinned_tab: "/assets/favicon-512x512.png"
+    favicon: "/assets/images/favicons/favicon.ico"
+    favicon96x96: "/assets/images/favicons/favicon-96x96.png"
+    apple_touch_icon: "/assets/images/favicons/favicon-180x180.png"
+    safari_pinned_tab: "/assets/images/favicons/favicon-512x512.png"
 
 menu:
   main:
