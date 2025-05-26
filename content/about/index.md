@@ -4,7 +4,7 @@ date: 2025-05-24
 ShowToc: false
 ---
 
-{{< figure src="dineshauti.jpeg" alt="Dinesh Auti" >}}
+{{< figure src="dineshauti.jpeg" alt="Dinesh Auti">}}
 
 Hi, I'm Dinesh and this site is my attempt to declutter my thoughts and hopefully help others along the way. I don’t claim to have it all figured out. But I’ve learned that even small observations can spark clarity for someone else—and that’s worth writing down.
 
@@ -35,4 +35,4 @@ When I’m not building or automating something, you’ll find me sipping chai o
 
 Thanks for being here 🙏
 
-You can also find me on [GitHub](https://github.com/dineshauti) or [LinkedIn](https://linkedin.com/in/dineshauti). Here is my [Resume](/assets/dinesh-auti-resume.pdf).
+You can also find me on [GitHub](https://github.com/dinesh-auti) or [LinkedIn](https://linkedin.com/in/dineshauti). Here is my [Resume](/assets/dinesh-auti-resume.pdf).
