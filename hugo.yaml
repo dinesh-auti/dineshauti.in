@@ -2,37 +2,55 @@ baseURL: "https://dineshauti.in/"
 title: "Dinesh Auti"
 theme: "PaperMod"
 languageCode: "en-us"
+enableRobotsTXT: true
+enableEmoji: true
+canonifyURLs: true
+
+build:
+  writeStats: true
+  useResourceCacheWhen: always
 
 caches:
   images:
     dir: :cacheDir/images
 
 params:
+  env: production
   author: "Dinesh Auti"
+  description: "Thoughts on infrastructure, SRE, automation, and DevOps"
+  keywords: [SRE, DevOps, Kubernetes, Observability, Hugo, Infrastructure]
   homeInfoParams:
-    Title: "[~]$ whoami"
-    Content: "**Site Reliability Engineer** with 6+ years of experience in building scalable cloud infrastructure, driving CI/CD automation, and
-enhancing system observability. Skilled in building scalable, secure, and efficient environments using IaC and modern DevOps
-practices. Proven ability to support infrastructure reliability initiatives, influence architecture decisions, and improve developer
-workflows in compliance-driven environments such as HITRUST."
+    Title: "Hi, I’m Dinesh 👋🏼"
+    Content: "A Site Reliability Engineer by day, curious tinkerer by always.
+    This site is where I brain-dump things I learn while wrangling infrastructure, debugging weird edge cases, or just figuring out why something broke (again). It’s also where I write about the stuff I do when I’m *not* knee-deep in Kubernetes YAML — like chasing small joys, reflecting on lessons from life, or logging those little “aha” moments in a [TIL](/til) (Today I Learned) log.
+    Expect posts on tech, tools, and the occasional philosophical detour.
+    Make yourself at home. [Read more &rarr;](/about/)"
 
   socialIcons:
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/dineshauti/"
     - name: "GitHub"
       url: "https://github.com/dineshnauti/"
+    - name: email
+      url: "mailto:auti.dinesh3[at]gmail[dot]com"
 
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadcrumbs: true
-  enableEmoji: true
+  ShowToc: true
+  assets:
+    disableHLJS: true
+    favicon: "/assets/favicon.ico"
+    favicon96x96: "/assets/favicon-96x96.png"
+    apple_touch_icon: "/assets/favicon-180x180.png"
+    safari_pinned_tab: "/assets/favicon-512x512.png"
 
 menu:
   main:
-#    - identifier: about
-#      name: About
-#      url: /about/
-#      weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
     - identifier: blog
       name: Blog
       url: /posts/
@@ -41,3 +59,25 @@ menu:
       name: Archives
       url: /archives/
       weight: 3
+    - identifier: til
+      name: TIL
+      url: /til/
+      weight: 4
+
+markup:
+  highlight:
+    noClasses: false
+    style: github-dark
+  goldmark:
+    renderer:
+      unsafe: false  # allows raw HTML in markdown
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # Required for search via Fuse.js if added later
+
+taxonomies:
+  tag: "tags"
+  category: "categories"

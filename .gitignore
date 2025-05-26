@@ -15,3 +15,6 @@ hugo.linux
 
 # IntelliJ
 .idea
+
+# macOS
+.DS_Store
