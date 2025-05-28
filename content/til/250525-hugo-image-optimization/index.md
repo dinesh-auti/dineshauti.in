@@ -1,8 +1,8 @@
 ---
 title: "Hugo Image Optimization"
-date: 2025-05-26
-tags: ["hugo", "blog", "til"]
-ShowToc: false
+date: 2025-05-25
+tags: ["til", "hugo", "blog"]
+categories: []
 ---
 
 Over time, the number of images in a Hugo blog can grow, and it becomes important to optimize them for faster page loads. I learned that **only images stored in page bundles (content/section/page/index.md) or the assets/ folder** can be resized and processed using Hugo’s built-in functions like .Resize, .Fit, .Convert, etc.

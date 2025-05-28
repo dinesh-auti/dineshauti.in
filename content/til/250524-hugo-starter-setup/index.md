@@ -2,7 +2,7 @@
 title: "Hugo Starter Setup"
 date: 2025-05-24
 tags: ["hugo", "blog", "til"]
-ShowToc: false
+categories: []
 ---
 After a few hours of tinkering, I finally have a basic Hugo blog setup with the PaperMod theme. Love the theme's simplicity and responsiveness. Here's a quick rundown of the setup process:
 1. **Install Hugo**: Follow the [Hugo installation guide](https://gohugo.io/getting-started/installing/) to get Hugo up and running on your machine.
