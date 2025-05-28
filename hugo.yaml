@@ -36,8 +36,8 @@ params:
       url: "mailto:auti.dinesh3[at]gmail[dot]com"
 
   ShowReadingTime: true
-  ShowPostNavLinks: true
   ShowBreadcrumbs: true
+  ShowCodeCopyButtons: true
   ShowToc: true
   assets:
     disableHLJS: true

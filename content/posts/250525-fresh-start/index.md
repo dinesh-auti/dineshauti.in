@@ -1,5 +1,5 @@
 ---
-date: '2025-05-26T13:00:57+02:00'
+date: '2025-05-25T13:00:57+02:00'
 title: 'Fresh Start'
 tags: ["life", "starting over"]
 categories: ["personal"]
