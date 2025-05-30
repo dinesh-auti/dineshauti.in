@@ -18,4 +18,6 @@ categories: []
 
 Ofcourse, SREs want systems that inherently do what is required and there is no need for external elements to manage the system.
 
-Ref: [Google SRE Book](https://sre.google/sre-book/automation-at-google/#xref_automation_value)
+{{< references >}}
+1. [Google SRE Book](https://sre.google/sre-book/automation-at-google/#xref_automation_value) 
+{{< /references >}}
