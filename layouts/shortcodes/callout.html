@@ -1,0 +1,9 @@
+{{ $type := .Get "type" | default "info" }}
+{{ $emoji := .Get "emoji" | default "" }}
+{{ $title := .Get "title" }}
+
+<div class="callout {{ $type }}">
+    {{ if $title }}<strong>{{ $title }}</strong> {{ end }}
+    {{ if $emoji }}<strong>{{ $emoji }}<br></strong> {{ end }}
+    {{ .Inner | markdownify }}
+</div>

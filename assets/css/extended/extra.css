@@ -1,0 +1,77 @@
+.callout {
+    padding: 1rem;
+    border-left: 4px solid;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: inherit;
+}
+
+/* === Light mode === */
+.callout.tip {
+    background-color: #e6ffed;
+    border-left-color: #38a169;
+}
+
+.callout.info {
+    background-color: #ebf8ff;
+    border-left-color: #3182ce;
+}
+
+.callout.warning {
+    background-color: #fffbea;
+    border-left-color: #d69e2e;
+}
+
+.callout.danger {
+    background-color: #ffe5e5;
+    border-left-color: #e53e3e;
+}
+
+/* === Dark mode === */
+.dark .callout.tip {
+    background-color: #234d20;
+    border-left-color: #48bb78;
+    color: #e6ffed;
+}
+
+.dark .callout.info {
+    background-color: #1e3a5f;
+    border-left-color: #63b3ed;
+    color: #ebf8ff;
+}
+
+.dark .callout.warning {
+    background-color: #4b430f;
+    border-left-color: #f6e05e;
+    color: #fffbea;
+}
+
+.dark .callout.danger {
+    background-color: #5b1a1a;
+    border-left-color: #fc8181;
+    color: #ffe5e5;
+}
+
+.references {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d1d5db;
+  line-height: 1.6;
+}
+
+.references h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.references a {
+  color: inherit;
+}
+
+.dark .references {
+  color: #d1d5db;
+  border-top-color: #4b5563;
+}
