@@ -97,4 +97,19 @@ This way, all images in my content posts are:
 - Converted to WebP for better compression
 - Lazy-loaded for performance
 
+### Hosting and Deploy - Continuous Delivery
+Hugo being a static site, its possible to host on GitHub pages and build using GitHub actions. All this for free :smile:. Hugo's official documentation for this step is very good. Follow it step by step to have the site up and running in no time - [Hugo: Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/).
+
+My GitHub action [workflow file](https://github.com/dinesh-auti/dineshauti.in/blob/main/.github/workflows/main.yml).
+
+Whenever you push a commit to the `main` branch on GitHub, it automatically triggers the build and deploy workflow. Within a few minutes, your blog will be updated live. This automated process is known as Continuous Delivery (CD).
+
 I will be adding more content and tweaking the design as I go along. If you're looking for a simple yet effective Hugo theme, I highly recommend checking out [PaperMod](https://adityatelange.github.io/hugo-PaperMod/). It's lightweight and has a clean design, making it perfect for a personal blog or portfolio.
+
+Checkout the [TILs](/tags/til) section for minor tweaks that don't deserve a post by itself.
+
+{{< references >}}
+1. [Hugo](https://gohugo.io/)
+2. [Hugo: PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod)
+3. [Hugo: Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/)  
+{{< /references >}}
