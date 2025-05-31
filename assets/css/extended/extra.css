@@ -75,3 +75,8 @@
   color: #d1d5db;
   border-top-color: #4b5563;
 }
+
+/* Add space above Giscus */
+#giscus_thread {
+  margin-top: 2rem; /* or 1.5rem for tighter */
+}

@@ -26,7 +26,9 @@ params:
     This site is where I brain-dump things I learn while wrangling infrastructure, debugging weird edge cases, or just figuring out why something broke (again). It’s also where I write about the stuff I do when I’m *not* knee-deep in Kubernetes YAML — like chasing small joys, reflecting on lessons from life, or logging those little “aha” moments in a [TIL](/til) (Today I Learned) log.
     Expect posts on tech, tools, and the occasional philosophical detour.
     Make yourself at home. [Read more &rarr;](/about/)"
-
+  
+  comments: true
+  
   socialIcons:
     - name: "LinkedIn"
       url: "https://www.linkedin.com/in/dineshauti/"
