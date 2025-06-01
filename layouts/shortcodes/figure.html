@@ -11,8 +11,8 @@
   {{ $quality := .Get "quality" | default "85" }}
 
   {{ $widthInt := int $widthStr }}
-  {{ $base := $img.Resize (printf "%dx q%s" $widthInt $quality) }}
-  {{ $retina := $img.Resize (printf "%dx q%s" (mul $widthInt 2) $quality) }}
+  {{ $base := $img.Resize (printf "%dx q%s webp" $widthInt $quality) }}
+  {{ $retina := $img.Resize (printf "%dx q%s webp" (mul $widthInt 2) $quality) }}
 
   <figure>
     <img 
