@@ -80,3 +80,12 @@
 #giscus_thread {
   margin-top: 2rem; /* or 1.5rem for tighter */
 }
+
+.paper-authors {
+  color: #6b7280;
+  display: block;
+}
+
+.dark .paper-authors {
+  color: #9ca3af;
+}

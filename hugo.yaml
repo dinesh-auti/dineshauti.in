@@ -71,6 +71,10 @@ menu:
       name: TIL
       url: /til/
       weight: 4
+    - identifier: papers
+      name: Papers
+      url: /papers/
+      weight: 5
 
 markup:
   highlight:
@@ -78,7 +82,7 @@ markup:
     style: github-dark
   goldmark:
     renderer:
-      unsafe: false  # allows raw HTML in markdown
+      unsafe: true  # allows raw HTML in markdown
 
 outputs:
   home:
