@@ -29,7 +29,7 @@ Hi, I'm Dinesh and this site is my attempt to declutter my thoughts and hopefull
 - **Observability**: Prometheus, Grafana, Loki, Pyroscope, Tempo
 - **Languages**: Go, Python, Bash
 
-When I’m not building or automating something, you’ll find me sipping chai or spending time with my family.
+When I’m not building or automating something, you’ll find me sipping chai and spending time with my family.
 
 I’m always looking for new opportunities to collaborate and eager to learn new things. If you have any questions, suggestions, or potential work opportunities, please feel free to reach out to me via email auti.dinesh3[at]gmail[dot]com. Here is my [Resume](/assets/dinesh-auti-resume.pdf).
 

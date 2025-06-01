@@ -1,55 +1,24 @@
-.callout {
-    padding: 1rem;
-    border-left: 4px solid;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
-    color: inherit;
+.callout-box {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: #f9f9f9;
+  padding: 1.25rem 1rem;
+  border-radius: 0.75rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-/* === Light mode === */
-.callout.tip {
-    background-color: #e6ffed;
-    border-left-color: #38a169;
+.callout-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #111827;
 }
 
-.callout.info {
-    background-color: #ebf8ff;
-    border-left-color: #3182ce;
-}
-
-.callout.warning {
-    background-color: #fffbea;
-    border-left-color: #d69e2e;
-}
-
-.callout.danger {
-    background-color: #ffe5e5;
-    border-left-color: #e53e3e;
-}
-
-/* === Dark mode === */
-.dark .callout.tip {
-    background-color: #234d20;
-    border-left-color: #48bb78;
-    color: #e6ffed;
-}
-
-.dark .callout.info {
-    background-color: #1e3a5f;
-    border-left-color: #63b3ed;
-    color: #ebf8ff;
-}
-
-.dark .callout.warning {
-    background-color: #4b430f;
-    border-left-color: #f6e05e;
-    color: #fffbea;
-}
-
-.dark .callout.danger {
-    background-color: #5b1a1a;
-    border-left-color: #fc8181;
-    color: #ffe5e5;
+.callout-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
 }
 
 .references {
@@ -71,11 +40,6 @@
   color: inherit;
 }
 
-.dark .references {
-  color: #d1d5db;
-  border-top-color: #4b5563;
-}
-
 /* Add space above Giscus */
 #giscus_thread {
   margin-top: 2rem; /* or 1.5rem for tighter */
@@ -84,8 +48,4 @@
 .paper-authors {
   color: #6b7280;
   display: block;
-}
-
-.dark .paper-authors {
-  color: #9ca3af;
 }

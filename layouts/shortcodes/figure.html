@@ -1,15 +1,33 @@
-{{ $resizeParam := .Get "size" | default "700x" }}
 {{ $img := .Page.Resources.GetMatch (.Get "src") }}
+
 {{ if not $img }}
-<p style="color:red;">❌ Image not found: {{ .Get "src" }}</p>
+  <p style="color:red;">❌ Image not found: {{ .Get "src" }}</p>
+
 {{ else if and (not (eq $img.MediaType.SubType "svg")) }}
-{{ $resized := $img.Resize (printf "%s webp" $resizeParam) }}
-<figure>
-    <img src="{{ $resized.RelPermalink | safeURL }}" alt="{{ .Get "alt" | safeHTMLAttr }}" loading="lazy" decoding="async" />
-    {{ if .Get "caption" }}
-    <figcaption>{{ .Get "caption" }}</figcaption>
-    {{ end }}
-</figure>
+
+  {{ $alt := .Get "alt" | default "" }}
+  {{ $caption := .Get "caption" }}
+  {{ $widthStr := .Get "width" | default "1200" }}
+  {{ $quality := .Get "quality" | default "85" }}
+
+  {{ $widthInt := int $widthStr }}
+  {{ $base := $img.Resize (printf "%dx q%s" $widthInt $quality) }}
+  {{ $retina := $img.Resize (printf "%dx q%s" (mul $widthInt 2) $quality) }}
+
+  <figure>
+    <img 
+      src="{{ $base.RelPermalink | safeURL }}"
+      srcset="{{ $base.RelPermalink | safeURL }} 1x, {{ $retina.RelPermalink | safeURL }} 2x"
+      alt="{{ $alt | safeHTMLAttr }}"
+      loading="lazy"
+      decoding="async"
+      width="{{ $widthInt }}"
+    />
+    {{ if $caption }}<figcaption>{{ $caption }}</figcaption>{{ end }}
+  </figure>
+
 {{ else }}
-<p style="color: orange;">⚠️ Image found, but unsupported for resizing: {{ .Get "src" }}</p>
+
+  <p style="color: orange;">⚠️ Image found, but unsupported for resizing: {{ .Get "src" }}</p>
+
 {{ end }}

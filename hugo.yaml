@@ -20,6 +20,8 @@ params:
   description: "Thoughts on infrastructure, SRE, automation, and DevOps"
   keywords: [SRE, DevOps, Kubernetes, Observability, Hugo, Infrastructure]
   mainSections: [posts]
+  defaultTheme: light
+  disableThemeToggle: true
   homeInfoParams:
     Title: "Hi, I’m Dinesh 👋🏼"
     Content: "A Site Reliability Engineer by day, curious tinkerer by always.
@@ -40,7 +42,7 @@ params:
   ShowReadingTime: true
   ShowBreadcrumbs: true
   ShowCodeCopyButtons: true
-  ShowToc: true
+  ShowToc: false
   assets:
     disableHLJS: true
     favicon: "/assets/images/favicons/favicon.ico"

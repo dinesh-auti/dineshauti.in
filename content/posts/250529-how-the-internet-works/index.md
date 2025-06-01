@@ -33,7 +33,7 @@ A clever technique called **Network Address Translation (NAT)** happens on your 
 
 Of course, most of us don’t memorize IP addresses — we remember names like minecraft.net. So how does your browser translate that name into an IP address it can actually connect to? That’s where DNS comes in. The answer to all these questions is the **Domain Name Service** or **DNS**. The DNS is a distributed database which keeps track of computer's names and their corresponding IP addresses on the Internet.
 
-{{< callout type="tip" title="Tip" emoji="💡" >}}
+{{< callout title="Ping" >}}
 [ping](https://linux.die.net/man/8/ping) is an utility used to test the connection between two network nodes. It works by sending a small packet of data (an "echo request") and waiting for a response (an "echo reply"). This process helps determine if a host is reachable and can also provide information about the round-trip time and potential packet loss. 
 {{< /callout >}}
 
@@ -49,7 +49,7 @@ Once your computer knows the IP address of the server, it needs to figure out ho
 
 Your request doesn’t travel in a straight line. Instead, it hops across multiple routers and networks to get from your machine to the server. You can actually see this hop-by-hop journey using tools like traceroute.
 
-{{< callout type="tip" title="Tip" emoji="💡" >}}
+{{< callout title="Traceroute">}}
 [traceroute](https://linux.die.net/man/8/traceroute) is an utility you can use to see the path packets are taking on the way to the destination. Once you have the IP addresses of all the hops, there are APIs which can help you geo-locate the IP addresses so as to visualize the path.
 {{< /callout >}}
 

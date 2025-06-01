@@ -2,6 +2,7 @@
 title: "Papers I’ve Read"
 layout: "single"
 summary: "A minimal, dated log of papers I’ve read or am reading, with brief notes."
+ShowToc: false
 ---
 
 This is a growing collection of research papers and whitepapers I’ve read — or am currently reading — across systems engineering, distributed computing, reliability, and software infrastructure. I use this page as a reading log and reference point, occasionally updating it with new insights.
@@ -16,12 +17,12 @@ A deep dive into Dynamo, the distributed system that inspired many modern NoSQL 
 <small class="paper-authors">Ghemawat, Gobioff, Leung</small>
 Describes the fault-tolerant, distributed file system that formed the backbone of Google’s infrastructure — optimized for large data throughput, not POSIX compliance.
 
-
-<!-- ---
+---
 
 ### Recently Read
- -->
 
+- **[SRE Book – Chapter: Eliminating Toil](https://sre.google/books/)**  
+  An SRE staple for understanding ops efficiency, automation goals, and engineering productivity.
 
 ---
 
@@ -35,9 +36,6 @@ An overview of datacenter-scale design — energy, efficiency, architecture — 
 
 - **[Spanner: Google’s Globally Distributed Database](https://research.google/pubs/archive/39966.pdf)**  
   How Google achieves strong consistency at global scale, leveraging TrueTime and synchronized clocks.
-
-- **[SRE Book – Chapter: Eliminating Toil](https://sre.google/books/)**  
-  An SRE staple for understanding ops efficiency, automation goals, and engineering productivity.
 
 - **[MapReduce: Simplified Data Processing on Large Clusters](https://research.google/pubs/pub62/)**  
   <small class="paper-authors">*Jeffrey Dean & Sanjay Ghemawat* </small>
