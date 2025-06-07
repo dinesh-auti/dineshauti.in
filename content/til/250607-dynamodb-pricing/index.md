@@ -41,6 +41,18 @@ Each shard maxes out at 1,000 WCUs
 ~$4.70 per hour × 24 hours = ~$113 per day just for writes
 Add reads, storage, and other costs → easily **$150k+** per day
 
+**Different item sizes:**  
+The Rule:  
+1 WCU = 1 write per second for items up to 1KB  
+If your item is larger than 1KB, you need more WCUs
+```
+50 bytes   → ceiling(50/1024)   = ceiling(0.049) = 1 WCU
+500 bytes  → ceiling(500/1024)  = ceiling(0.488) = 1 WCU  
+1024 bytes → ceiling(1024/1024) = ceiling(1.0)   = 1 WCU
+1025 bytes → ceiling(1025/1024) = ceiling(1.001) = 2 WCUs
+2048 bytes → ceiling(2048/1024) = ceiling(2.0)   = 2 WCUs
+```
+
 ### Summary
 DynamoDB is better suited for "medium-large" scale, not "internet-giant" scale.
 Batch multiple views into single items.
