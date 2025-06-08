@@ -11,4 +11,6 @@ Eric A. Brewer first introduced the CAP theorem as a keynote talk at the 2000 Sy
 
  Understanding the CAP theorem has been a game changer for me while reading papers on large scale distributed systems like Amazon Dynamo and Google File Systems. The more I learn to apply it and see how it is being applied makes it feel more natural like the laws of physics.
 
+In the world of distributed systems, **partition tolerance** is a given. So really the choice is between availability and consistency. In terms of a database, this means that you can either have a system that is always available (even if it means serving stale data) or one that ensures strong consistency (but may not always be available).
+
  More about [Prof. Eric A. Brewer](https://people.eecs.berkeley.edu/~brewer/bio.html)
