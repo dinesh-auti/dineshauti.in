@@ -1,3 +1,14 @@
+/* Text selection highlight color */
+::selection {
+  background-color: #facc15; /* Tailwind yellow-400 */
+  color: #000; /* Ensure readability */
+}
+
+::-moz-selection {
+  background-color: #facc15;
+  color: #000;
+}
+
 .callout-box {
   border: 2px solid rgba(0, 0, 0, 0.8);
   background-color: #f9f9f9;
